@@ -1,0 +1,506 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Timothée Petit — Créateur de projets numériques</title>
+  <meta name="description" content="Portfolio de Timothée Petit, 18 ans, créateur de projets numériques en France : Nerys, Galaxy OS, ArchiEasy, GetViralCheck, OptiMap 06, VerifierFuzz.">
+  <meta name="author" content="Timothée Petit">
+  <meta name="theme-color" content="#F3F0E8">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Timothée Petit — Créateur de projets numériques">
+  <meta property="og:description" content="Projets numériques, prototypes et expériences construits avec curiosité, précision et goût du détail.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter+Tight:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#projets">Aller aux projets</a>
+
+  <header class="nav" id="top">
+    <a class="nav__brand" href="#top" aria-label="Timothée Petit, retour en haut">Timothée Petit<span class="dot" aria-hidden="true">.</span></a>
+    <nav aria-label="Navigation principale">
+      <ul class="nav__links">
+        <li><a href="#projets">Projets</a></li>
+        <li><a href="#a-propos">À propos</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero__space" aria-hidden="true">
+        <span class="space-portal"></span>
+        <span class="space-arc"></span>
+        <span class="space-line space-line--1"></span>
+        <span class="space-line space-line--2"></span>
+      </div>
+      <div class="sculpture" aria-hidden="true">
+        <div class="sc-breath"></div>
+        <div class="sc-parallax">
+        <div class="sc-stage">
+          <div class="sc-halo"></div>
+          <div class="sc-plane sc-plane--back"></div>
+          <div class="sc-sphere"><span class="sc-sphere__rim"></span></div>
+          <div class="sc-ring"></div>
+          <div class="sc-ring2"></div>
+          <div class="sc-plane sc-plane--mid"></div>
+          <div class="sc-blade"></div>
+          <div class="sc-plane sc-plane--front"><span class="sc-plane__edge"></span></div>
+          <div class="sc-beam"></div>
+        </div>
+        </div>
+        <div class="sc-sweep"></div>
+        <div class="sc-floor"></div>
+      </div>
+      <div class="hero__scrim" aria-hidden="true"></div>
+      <p class="hero__meta reveal"><span>Créateur de projets numériques</span><span>18 ans — France</span></p>
+      <h1 id="hero-title" class="hero__title reveal">
+        <span class="hero__name">Timothée <span class="hero__last">Petit</span></span>
+        <span class="hero__line">Je donne <em>forme</em> aux idées.</span>
+      </h1>
+      <div class="hero__foot reveal">
+        <p class="hero__sub">Projets numériques, prototypes et expériences construits avec curiosité, précision et goût du détail.</p>
+        <a class="hero__cta" href="#projets">
+          <span>Découvrir les projets</span>
+          <span class="arrow" aria-hidden="true">↓</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- PROJETS -->
+    <section class="work" id="projets" aria-labelledby="work-title">
+      <div class="section-head">
+        <p class="eyebrow">Sélection — 06 projets</p>
+        <h2 id="work-title" class="section-title">Ce que j’ai <em>construit</em>.</h2>
+      </div>
+
+      <ol class="projects">
+        <!-- 01 NERYS -->
+        <li class="project project--lead">
+          <button class="project__row" aria-expanded="false" aria-controls="p1">
+            <span class="project__num">01</span>
+            <span class="project__name">Nerys</span>
+            <span class="project__cat">Projet personnel principal · Assistant local</span>
+            <span class="project__toggle" aria-hidden="true"></span>
+          </button>
+          <div class="project__panel" id="p1" hidden>
+            <div class="project__body">
+              <div class="brief">
+                <section class="brief__block">
+                  <h3 class="brief__title"><span class="brief__n">01</span>Le projet</h3>
+                  <p>Nerys est mon assistant personnel local et privé, conçu pour m’aider à avancer sur mes projets.</p>
+                </section>
+                <section class="brief__block">
+                  <h3 class="brief__title"><span class="brief__n">02</span>Ce que j’ai créé</h3>
+                  <p>Une application locale avec mémoire persistante, mode Copilote, gestion de conversations, travail sur documents et recherche web sourcée.</p>
+                </section>
+                <section class="brief__block">
+                  <h3 class="brief__title"><span class="brief__n">03</span>Comment ça fonctionne</h3>
+                  <p>Nerys conserve le contexte utile à un projet, peut s’appuyer sur mes conversations et documents, puis m’aider à réfléchir ou travailler sans repartir de zéro.</p>
+                </section>
+                <section class="brief__block brief__block--now">
+                  <h3 class="brief__title"><span class="brief__n">04</span>Aujourd’hui</h3>
+                  <p>Le projet fonctionne localement sur mon ordinateur avec Node.js, SQLite et Ollama. Il reste un outil personnel en amélioration continue.</p>
+                </section>
+              </div>
+              <div class="brief__meta">
+                <ul class="tags"><li>Node.js</li><li>SQLite</li><li>Ollama</li><li>llama-server</li></ul>
+                <p class="brief__status"><span>Statut</span>Outil personnel, en amélioration continue</p>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <!-- 02 GALAXY -->
+        <li class="project">
+          <button class="project__row" aria-expanded="false" aria-controls="p2">
+            <span class="project__num">02</span>
+            <span class="project__name">Galaxy OS</span>
+            <span class="project__cat">Système de travail interne</span>
+            <span class="project__toggle" aria-hidden="true"></span>
+          </button>
+          <div class="project__panel" id="p2" hidden>
+            <div class="project__body">
+              <div class="brief">
+                <section class="brief__block">
+                  <h3 class="brief__title"><span class="brief__n">01</span>Le projet</h3>
+                  <p>Galaxy OS est mon système personnel de travail pour transformer une idée en recherche, expérience, résultat puis décision.</p>
+                </section>
+                <section class="brief__block">
+                  <h3 class="brief__title"><span class="brief__n">02</span>Ce que j’ai créé</h3>
+                  <p>Un environnement interne qui organise mes projets, mes hypothèses, mes expérimentations et les apprentissages obtenus.</p>
+                </section>
+                <section class="brief__block">
+                  <h3 class="brief__title"><span class="brief__n">03</span>Comment ça fonctionne</h3>
+                  <p>Je pars d’un objectif ou d’une idée. Galaxy aide à structurer la recherche, suivre ce qui est testé, conserver les preuves et décider s’il faut construire, améliorer ou arrêter.</p>
+                </section>
+                <section class="brief__block brief__block--now">
+                  <h3 class="brief__title"><span class="brief__n">04</span>Aujourd’hui</h3>
+                  <p>C’est un système personnel en évolution. Il ne s’agit pas d’une entreprise ou d’un produit commercial déjà validé.</p>
+                </section>
+              </div>
+              <div class="brief__meta">
+                <ul class="tags"><li>Outil personnel</li><li>Méthode</li><li>Prototypage</li></ul>
+                <p class="brief__status"><span>Statut</span>Système personnel, en évolution</p>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <!-- 03 ARCHIEASY -->
+        <li class="project">
+          <button class="project__row" aria-expanded="false" aria-controls="p3">
+            <span class="project__num">03</span>
+            <span class="project__name">ArchiEasy</span>
+            <span class="project__cat">Prototype · Architecture</span>
+            <span class="project__toggle" aria-hidden="true"></span>
+          </button>
+          <div class="project__panel" id="p3" hidden>
+            <div class="project__body">
+              <div class="brief">
+                <section class="brief__block">
+                  <h3 class="brief__title"><span class="brief__n">01</span>Le projet</h3>
+                  <p>ArchiEasy est un prototype que j’ai conçu et développé pour explorer une manière plus simple de donner une première forme à une idée architecturale.</p>
+                </section>
+                <section class="brief__block">
+                  <h3 class="brief__title"><span class="brief__n">02</span>Ce que j’ai créé</h3>
+                  <p>Le prototype, son parcours de conception, son développement et ses itérations techniques.</p>
+                </section>
+                <section class="brief__block">
+                  <h3 class="brief__title"><span class="brief__n">03</span>Comment ça fonctionne</h3>
+                  <p>Une intention décrite simplement est traduite en besoins et contraintes, puis en première organisation de l’espace, base de plan structurée et visualisation.</p>
+                </section>
+                <section class="brief__block brief__block--now">
+                  <h3 class="brief__title"><span class="brief__n">04</span>Aujourd’hui</h3>
+                  <p>C’est un prototype d’exploration, pas un logiciel commercial finalisé.</p>
+                </section>
+              </div>
+              <div class="brief__meta">
+                <ul class="tags"><li>Conception</li><li>Développement</li><li>Itérations</li></ul>
+                <p class="brief__status"><span>Statut</span>Prototype d’exploration</p>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <!-- 04 GETVIRALCHECK -->
+        <li class="project">
+          <button class="project__row" aria-expanded="false" aria-controls="p4">
+            <span class="project__num">04</span>
+            <span class="project__name">GetViralCheck</span>
+            <span class="project__cat">Produit web · Analyse vidéo</span>
+            <span class="project__toggle" aria-hidden="true"></span>
+          </button>
+          <div class="project__panel" id="p4" hidden>
+            <div class="project__body">
+              <div class="brief">
+                <section class="brief__block">
+                  <h3 class="brief__title"><span class="brief__n">01</span>Le projet</h3>
+                  <p>GetViralCheck est un produit web d’analyse de contenu vidéo.</p>
+                </section>
+                <section class="brief__block">
+                  <h3 class="brief__title"><span class="brief__n">02</span>Ce que j’ai créé</h3>
+                  <p>Une expérience web permettant d’explorer comment présenter l’analyse d’un contenu, un essai utilisateur et une offre premium.</p>
+                </section>
+                <section class="brief__block">
+                  <h3 class="brief__title"><span class="brief__n">03</span>Comment ça fonctionne</h3>
+                  <p>L’utilisateur soumet son contenu et reçoit une analyse présentée de manière simple et exploitable.</p>
+                </section>
+                <section class="brief__block brief__block--now">
+                  <h3 class="brief__title"><span class="brief__n">04</span>Aujourd’hui</h3>
+                  <p>Le produit a été lancé comme expérience d’apprentissage produit. Il est actuellement en pause.</p>
+                </section>
+              </div>
+              <div class="brief__meta">
+                <ul class="tags"><li>Développement web</li><li>Design produit</li><li>Tests d’usage</li></ul>
+                <p class="brief__status"><span>Statut</span>En pause</p>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <!-- 05 OPTIMAP -->
+        <li class="project">
+          <button class="project__row" aria-expanded="false" aria-controls="p5">
+            <span class="project__num">05</span>
+            <span class="project__name">OptiMap 06</span>
+            <span class="project__cat">Projet de données · Alpes-Maritimes</span>
+            <span class="project__toggle" aria-hidden="true"></span>
+          </button>
+          <div class="project__panel" id="p5" hidden>
+            <div class="project__body">
+              <div class="brief">
+                <section class="brief__block">
+                  <h3 class="brief__title"><span class="brief__n">01</span>Le projet</h3>
+                  <p>OptiMap 06 est une base de données de marché sur les établissements d’optique des Alpes-Maritimes.</p>
+                </section>
+                <section class="brief__block">
+                  <h3 class="brief__title"><span class="brief__n">02</span>Ce que j’ai créé</h3>
+                  <p>Une base professionnelle structurée à partir de données publiques SIRENE, avec nettoyage, contrôle des doublons, statuts d’activité et export.</p>
+                </section>
+                <section class="brief__block">
+                  <h3 class="brief__title"><span class="brief__n">03</span>Comment ça fonctionne</h3>
+                  <p>Les données sont collectées, normalisées et organisées pour permettre de filtrer les établissements actifs, fermés ou à vérifier.</p>
+                </section>
+                <section class="brief__block brief__block--now">
+                  <h3 class="brief__title"><span class="brief__n">04</span>Aujourd’hui</h3>
+                  <p>La base principale contient 689 établissements, dont 373 actifs et 316 fermés. Elle constitue un prototype de travail sur la donnée locale.</p>
+                </section>
+              </div>
+              <div class="brief__meta">
+                <ul class="tags"><li>SIRENE</li><li>Données publiques</li><li>Export</li></ul>
+                <p class="brief__status"><span>Statut</span>Prototype de travail</p>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <!-- 06 VERIFIERFUZZ -->
+        <li class="project project--quiet">
+          <button class="project__row" aria-expanded="false" aria-controls="p6">
+            <span class="project__num">06</span>
+            <span class="project__name">VerifierFuzz</span>
+            <span class="project__cat">Recherche technique</span>
+            <span class="project__toggle" aria-hidden="true"></span>
+          </button>
+          <div class="project__panel" id="p6" hidden>
+            <div class="project__body">
+              <div class="brief">
+                <section class="brief__block">
+                  <h3 class="brief__title"><span class="brief__n">01</span>Le projet</h3>
+                  <p>VerifierFuzz est un projet de recherche technique sur la fiabilité de vérificateurs utilisés dans des environnements d’évaluation IA.</p>
+                </section>
+                <section class="brief__block">
+                  <h3 class="brief__title"><span class="brief__n">02</span>Ce que j’ai créé</h3>
+                  <p>Un outil de tests reproductibles, des rapports déterministes et une méthode d’audit documentant aussi les limites de l’analyse.</p>
+                </section>
+                <section class="brief__block">
+                  <h3 class="brief__title"><span class="brief__n">03</span>Comment ça fonctionne</h3>
+                  <p>Le système lance des sondes sur des vérificateurs afin d’identifier des comportements anormaux ou des récompenses exploitables.</p>
+                </section>
+                <section class="brief__block brief__block--now">
+                  <h3 class="brief__title"><span class="brief__n">04</span>Aujourd’hui</h3>
+                  <p>Le projet est conservé comme travail de recherche : les tests réels n’ont pas apporté assez de preuves pour en faire une entreprise.</p>
+                </section>
+              </div>
+              <div class="brief__meta">
+                <ul class="tags"><li>Audit</li><li>Tests automatisés</li><li>Recherche</li></ul>
+                <p class="brief__status"><span>Statut</span>Travail de recherche, conservé</p>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- SYSTÈMES : cartes de fonctionnement -->
+    <section class="systems" id="systemes" aria-labelledby="systems-title">
+      <div class="arch-lintel" aria-hidden="true"><span></span><span></span><span></span></div>
+      <div class="section-head">
+        <p class="eyebrow">Cartes de fonctionnement</p>
+        <h2 id="systems-title" class="visually-hidden">Cartes de fonctionnement</h2>
+      </div>
+
+      <!-- MAP GALAXY OS -->
+      <article class="map map--galaxy" aria-labelledby="map-galaxy-title">
+        <header class="map__head">
+          <h3 id="map-galaxy-title" class="map__title">Galaxy OS <em>De l’idée à la décision.</em></h3>
+          <p class="map__lede">Un système personnel que je construis pour transformer une intuition en expérience mesurable, puis en décision.</p>
+        </header>
+        <div class="map__stage">
+          <span class="map__glow" aria-hidden="true"></span>
+          <div class="map__plot">
+            <svg class="map__lines" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+              <defs>
+                <linearGradient id="lnGrad" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="100" y2="0">
+                  <stop offset="0" stop-color="#3E6BFF"/><stop offset=".55" stop-color="#2BB8D6"/><stop offset="1" stop-color="#FF6A3D"/>
+                </linearGradient>
+                <linearGradient id="spokeGrad" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="100" y2="100">
+                  <stop offset="0" stop-color="#2BB8D6"/><stop offset="1" stop-color="#FF6A3D"/>
+                </linearGradient>
+                <radialGradient id="galHalo"><stop offset="0" stop-color="#FF6A3D" stop-opacity=".22"/><stop offset=".45" stop-color="#1D46F2" stop-opacity=".16"/><stop offset="1" stop-color="#1D46F2" stop-opacity="0"/></radialGradient>
+              </defs>
+              <ellipse class="ln-halo" cx="50" cy="48.3" rx="34" ry="52" fill="url(#galHalo)"/>
+              <ellipse class="ln-zone" cx="50" cy="48.3" rx="30" ry="46"/>
+              <ellipse class="ln-zone ln-zone--2" cx="50" cy="48.3" rx="47" ry="72"/>
+              <ellipse class="ln-zone ln-zone--3" cx="50" cy="48.3" rx="64" ry="98"/>
+              <path class="ln-spoke" style="--d:0s" d="M12.5 13.3 L50 48.3"/>
+              <path class="ln-spoke" style="--d:1.2s" d="M37.5 13.3 L50 48.3"/>
+              <path class="ln-spoke" style="--d:2.4s" d="M62.5 13.3 L50 48.3"/>
+              <path class="ln-spoke" style="--d:3.6s" d="M87.5 13.3 L50 48.3"/>
+              <path class="ln-spoke" style="--d:4.8s" d="M87.5 48.3 L50 48.3"/>
+              <path class="ln-glow" d="M12.5 13.3 H87.5 V48.3 H50 V86.7"/>
+              <path class="ln-main" d="M12.5 13.3 H87.5 V48.3 H50 V86.7"/>
+              <path class="ln-pulse" style="--d:0s" pathLength="100" stroke-dashoffset="0" d="M12.5 13.3 H87.5 V48.3 H50 V86.7"/>
+              <path class="ln-pulse" style="--d:2s" pathLength="100" stroke-dashoffset="-25" d="M12.5 13.3 H87.5 V48.3 H50 V86.7"/>
+              <path class="ln-pulse" style="--d:4s" pathLength="100" stroke-dashoffset="-50" d="M12.5 13.3 H87.5 V48.3 H50 V86.7"/>
+              <path class="ln-pulse" style="--d:6s" pathLength="100" stroke-dashoffset="-75" d="M12.5 13.3 H87.5 V48.3 H50 V86.7"/>
+            </svg>
+            <ol class="map__flow" aria-label="Étapes du flux Galaxy OS">
+            <li class="node" style="--i:0" tabindex="0"><span class="node__idx">01</span><span class="node__label">Idée / objectif</span><span class="node__tip">Le point de départ : une intuition formulée clairement.</span></li>
+            <li class="node" style="--i:1" tabindex="0"><span class="node__idx">02</span><span class="node__label">Recherche</span><span class="node__tip">Rassembler ce qui existe déjà avant de construire.</span></li>
+            <li class="node" style="--i:2" tabindex="0"><span class="node__idx">03</span><span class="node__label">Hypothèse</span><span class="node__tip">Écrire ce que je pense vrai, pour pouvoir le vérifier.</span></li>
+            <li class="node" style="--i:3" tabindex="0"><span class="node__idx">04</span><span class="node__label">Expérience</span><span class="node__tip">Un test limité, conçu pour répondre à l’hypothèse.</span></li>
+            <li class="node" style="--i:4" tabindex="0"><span class="node__idx">05</span><span class="node__label">Preuves et résultats</span><span class="node__tip">Ce que l’expérience montre réellement, même quand c’est décevant.</span></li>
+            <li class="node node--key" style="--i:5" tabindex="0"><span class="node__idx">06</span><span class="node__label">Décision</span><span class="node__tip">Poursuivre, ajuster ou arrêter.</span></li>
+            <li class="node" style="--i:6" tabindex="0"><span class="node__idx">07</span><span class="node__label">Mémoire des apprentissages</span><span class="node__tip">Ce qui a été appris reste disponible pour la suite.</span></li>
+          </ol>
+          </div>
+          <p class="map__satlabel">Modules reliés</p>
+          <ul class="map__sats" aria-label="Modules reliés à Galaxy OS">
+            <li class="sat" style="--i:0" tabindex="0"><span class="sat__label">Agents de travail</span><span class="node__tip">Des assistants qui prennent en charge certaines étapes, sous supervision.</span></li>
+            <li class="sat" style="--i:1" tabindex="0"><span class="sat__label">Rapports</span><span class="node__tip">Des synthèses pour relire où en est chaque piste.</span></li>
+            <li class="sat" style="--i:2" tabindex="0"><span class="sat__label">Suivi d’expériences</span><span class="node__tip">Garder la trace de ce qui est en cours et de ce qui a été testé.</span></li>
+            <li class="sat sat--key" style="--i:3" tabindex="0"><span class="sat__label">Contrôle fondateur</span><span class="node__tip">Les décisions importantes restent validées par moi.</span></li>
+          </ul>
+        </div>
+      </article>
+
+      <div class="arch-joint" aria-hidden="true"></div>
+
+      <!-- MAP NERYS -->
+      <article class="map map--nerys" aria-labelledby="map-nerys-title">
+        <header class="map__head">
+          <h3 id="map-nerys-title" class="map__title">Nerys <em>Un assistant qui garde le fil.</em></h3>
+          <p class="map__lede">Mon assistant personnel local, conçu pour garder le contexte utile et m’aider à avancer sur mes projets.</p>
+        </header>
+        <div class="map__stage">
+          <span class="map__glow" aria-hidden="true"></span>
+          <div class="map__plot">
+            <svg class="map__lines" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+              <defs>
+                <radialGradient id="nerHalo"><stop offset="0" stop-color="#2BB8D6" stop-opacity=".22"/><stop offset=".5" stop-color="#1D46F2" stop-opacity=".14"/><stop offset="1" stop-color="#1D46F2" stop-opacity="0"/></radialGradient>
+              </defs>
+              <ellipse class="ln-halo" cx="50" cy="50" rx="22" ry="70" fill="url(#nerHalo)"/>
+              <path class="ln-layer" style="--i:0" d="M0 8 C24 8 32 50 50 50"/>
+              <path class="ln-layer" style="--i:1" d="M0 29 C24 29 32 50 50 50"/>
+              <path class="ln-layer" style="--i:2" d="M0 50 C24 50 32 50 50 50"/>
+              <path class="ln-layer" style="--i:3" d="M0 71 C24 71 32 50 50 50"/>
+              <path class="ln-layer" style="--i:4" d="M0 92 C24 92 32 50 50 50"/>
+              <path class="ln-layer ln-layer--out" style="--i:5" d="M50 50 C70 50 78 26 100 26"/>
+              <path class="ln-layer ln-layer--out" style="--i:6" d="M50 50 C70 50 78 74 100 74"/>
+              <path class="ln-strand" d="M0 8 C24 8 32 50 50 50 M0 29 C24 29 32 50 50 50 M0 50 C24 50 32 50 50 50 M0 71 C24 71 32 50 50 50 M0 92 C24 92 32 50 50 50 M50 50 C70 50 78 26 100 26 M50 50 C70 50 78 74 100 74"/>
+              <path class="ln-glow" d="M10 35 C20 35 20 65 30 65 S40 50 50 50 S60 65 70 65 S80 35 90 35"/>
+              <path class="ln-main" d="M10 35 C20 35 20 65 30 65 S40 50 50 50 S60 65 70 65 S80 35 90 35"/>
+              <path class="ln-pulse" style="--d:0s" pathLength="100" stroke-dashoffset="0" d="M10 35 C20 35 20 65 30 65 S40 50 50 50 S60 65 70 65 S80 35 90 35"/>
+              <path class="ln-pulse" style="--d:2s" pathLength="100" stroke-dashoffset="-25" d="M10 35 C20 35 20 65 30 65 S40 50 50 50 S60 65 70 65 S80 35 90 35"/>
+              <path class="ln-pulse" style="--d:4s" pathLength="100" stroke-dashoffset="-50" d="M10 35 C20 35 20 65 30 65 S40 50 50 50 S60 65 70 65 S80 35 90 35"/>
+              <path class="ln-pulse" style="--d:6s" pathLength="100" stroke-dashoffset="-75" d="M10 35 C20 35 20 65 30 65 S40 50 50 50 S60 65 70 65 S80 35 90 35"/>
+            </svg>
+            <ol class="map__flow" aria-label="Étapes du flux Nerys">
+            <li class="node" style="--i:0" tabindex="0"><span class="node__idx">01</span><span class="node__label">Conversation</span><span class="node__tip">Je pose une question ou décris ce sur quoi je travaille.</span></li>
+            <li class="node" style="--i:1" tabindex="0"><span class="node__idx">02</span><span class="node__label">Contexte du projet</span><span class="node__tip">Nerys retrouve le projet concerné et ce qui compte pour lui.</span></li>
+            <li class="node node--key" style="--i:2" tabindex="0"><span class="node__idx">03</span><span class="node__label">Mémoire persistante</span><span class="node__tip">Ce qui a été dit et décidé reste disponible d’une session à l’autre.</span></li>
+            <li class="node" style="--i:3" tabindex="0"><span class="node__idx">04</span><span class="node__label">Raisonnement local</span><span class="node__tip">Le modèle tourne sur ma machine.</span></li>
+            <li class="node" style="--i:4" tabindex="0"><span class="node__idx">05</span><span class="node__label">Réponse / Copilote</span><span class="node__tip">Une réponse, ou un accompagnement pas à pas en mode Copilote.</span></li>
+          </ol>
+          </div>
+          <p class="map__satlabel">Modules reliés</p>
+          <ul class="map__sats" aria-label="Modules reliés à Nerys">
+            <li class="sat" style="--i:0" tabindex="0"><span class="sat__label">Documents avec références de lignes</span><span class="node__tip">Les réponses peuvent renvoyer aux lignes précises d’un document.</span></li>
+            <li class="sat" style="--i:1" tabindex="0"><span class="sat__label">Recherche web sourcée</span><span class="node__tip">Quand Nerys cherche en ligne, les sources sont indiquées.</span></li>
+            <li class="sat sat--key" style="--i:2" tabindex="0"><span class="sat__label">Ollama / modèle local</span><span class="node__tip">Le modèle est exécuté localement, via Ollama ou llama-server.</span></li>
+            <li class="sat" style="--i:3" tabindex="0"><span class="sat__label">Interface</span><span class="node__tip">Une application locale pour échanger avec Nerys.</span></li>
+            <li class="sat" style="--i:4" tabindex="0"><span class="sat__label">Notes et conversations</span><span class="node__tip">Conservées localement, dans SQLite.</span></li>
+          </ul>
+        </div>
+      </article>
+
+      <div class="arch-joint" aria-hidden="true"></div>
+
+      <!-- MAP ARCHIEASY -->
+      <article class="map map--archi" aria-labelledby="map-archi-title">
+        <header class="map__head">
+          <h3 id="map-archi-title" class="map__title">ArchiEasy <em>Donner une première forme à une idée d’espace.</em></h3>
+          <p class="map__lede">ArchiEasy est un prototype que j’ai conçu et développé pour explorer comment transformer une intention architecturale décrite simplement en une base de plan structurée, puis en visualisation.</p>
+        </header>
+        <div class="map__stage">
+          <span class="map__glow" aria-hidden="true"></span>
+          <span class="map__frame" aria-hidden="true"></span>
+          <div class="map__plot">
+            <svg class="map__lines map__iso" viewBox="0 0 1000 120" preserveAspectRatio="xMidYMax meet" aria-hidden="true" focusable="false">
+              <path class="iso-construct" d="M0 112 H1000 M40 112 L161.2 42 M960 112 L838.8 42"/>
+              <path class="iso-vol" style="--i:0" d="M106.7 87.0 L150.0 112.0 L210.6 77.0 M106.7 53.0 L150.0 78.0 L210.6 43.0 L167.3 18.0 Z M106.7 87.0 L106.7 53.0 M150.0 112.0 L150.0 78.0 M210.6 77.0 L210.6 43.0"/>
+              <path class="iso-vol iso-vol--key" style="--i:1" d="M320.2 89.0 L360.0 112.0 L463.9 52.0 M320.2 27.0 L360.0 50.0 L463.9 -10.0 L424.1 -33.0 Z M320.2 89.0 L320.2 27.0 M360.0 112.0 L360.0 50.0 M463.9 52.0 L463.9 -10.0"/>
+              <path class="iso-vol" style="--i:2" d="M529.6 80.0 L585.0 112.0 L640.4 80.0 M529.6 54.0 L585.0 86.0 L640.4 54.0 L585.0 22.0 Z M529.6 80.0 L529.6 54.0 M585.0 112.0 L585.0 86.0 M640.4 80.0 L640.4 54.0"/>
+              <path class="iso-vol" style="--i:3" d="M775.0 86.0 L820.0 112.0 L899.7 66.0 M775.0 38.0 L820.0 64.0 L899.7 18.0 L854.6 -8.0 Z M775.0 86.0 L775.0 38.0 M820.0 112.0 L820.0 64.0 M899.7 66.0 L899.7 18.0"/>
+            </svg>
+            
+            <ol class="map__flow" aria-label="Étapes du prototype ArchiEasy">
+            <li class="node" style="--i:0" tabindex="0"><span class="node__idx">01</span><span class="node__label">Intention / description</span><span class="node__tip">On décrit simplement l’espace souhaité, avec ses propres mots.</span></li>
+            <li class="node" style="--i:1" tabindex="0"><span class="node__idx">02</span><span class="node__label">Besoins et contraintes</span><span class="node__tip">On précise ce qui compte : les pièces, leurs usages, les limites à respecter.</span></li>
+            <li class="node" style="--i:2" tabindex="0"><span class="node__idx">03</span><span class="node__label">Première organisation de l’espace</span><span class="node__tip">Une première idée de la façon dont les pièces peuvent s’agencer entre elles.</span></li>
+            <li class="node" style="--i:3" tabindex="0"><span class="node__idx">04</span><span class="node__label">Plan structuré</span><span class="node__tip">Cette organisation devient une base de plan, plus précise et plus lisible.</span></li>
+            <li class="node" style="--i:4" tabindex="0"><span class="node__idx">05</span><span class="node__label">Visualisation</span><span class="node__tip">Le plan est rendu visible, pour mieux se représenter l’espace.</span></li>
+            <li class="node node--key" style="--i:5" tabindex="0"><span class="node__idx">06</span><span class="node__label">Itérations</span><span class="node__tip">On observe, on ajuste, on recommence : c’est ainsi que le prototype s’est amélioré progressivement.</span></li>
+          </ol>
+          </div>
+          <p class="map__satlabel">Modules reliés</p>
+          <ul class="map__sats" aria-label="Modules reliés à ArchiEasy">
+            <li class="sat" style="--i:0" tabindex="0"><span class="sat__label">Expérience utilisateur</span><span class="node__tip">Rendre le parcours compréhensible pour quelqu’un qui n’est pas architecte.</span></li>
+            <li class="sat" style="--i:1" tabindex="0"><span class="sat__label">Logique et développement</span><span class="node__tip">Le code qui relie chaque étape à la suivante.</span></li>
+            <li class="sat" style="--i:2" tabindex="0"><span class="sat__label">Réflexion sur les plans</span><span class="node__tip">Se demander ce qu’un plan doit contenir pour être utile.</span></li>
+            <li class="sat" style="--i:3" tabindex="0"><span class="sat__label">Tests et ajustements</span><span class="node__tip">Vérifier le comportement du prototype et corriger ce qui ne va pas.</span></li>
+            <li class="sat sat--key" style="--i:4" tabindex="0"><span class="sat__label">Conception &amp; développement</span><span class="node__tip">J’ai assuré la conception du prototype et son développement.</span></li>
+          </ul>
+          <aside class="contrib" aria-labelledby="contrib-title">
+            <p id="contrib-title" class="contrib__label">Ma contribution</p>
+            <p class="contrib__text">J’ai conçu, développé et fait évoluer le prototype ArchiEasy, de l’idée aux itérations techniques.</p>
+          </aside>
+        </div>
+      </article>
+    </section>
+
+    <!-- À PROPOS -->
+    <section class="about" id="a-propos" aria-labelledby="about-title">
+      <p class="eyebrow">À propos</p>
+      <h2 id="about-title" class="visually-hidden">À propos</h2>
+      <div class="about__text reveal">
+        <p class="about__big">J’ai 18 ans et je vis en France. J’aime partir d’une idée <em>concrète</em>, la rendre visible, puis la transformer en quelque chose qui fonctionne réellement.</p>
+        <p class="about__small">Je travaille entre conception, développement, recherche et expérimentation.</p>
+      </div>
+    </section>
+
+    <!-- COMPÉTENCES -->
+    <section class="skills" aria-labelledby="skills-title">
+      <div class="section-head">
+        <p class="eyebrow">Outils &amp; pratiques</p>
+        <h2 id="skills-title" class="section-title section-title--sm">Avec quoi je <em>travaille</em>.</h2>
+      </div>
+      <div class="skills__grid">
+        <div class="skills__group reveal">
+          <h3 class="label">Langages &amp; données</h3>
+          <ul><li>JavaScript / TypeScript</li><li>Node.js</li><li>Python</li><li>SQLite</li></ul>
+        </div>
+        <div class="skills__group reveal">
+          <h3 class="label">Construction</h3>
+          <ul><li>Développement web</li><li>APIs</li><li>Git / GitHub</li><li>Tests automatisés</li><li>Claude Code</li></ul>
+        </div>
+        <div class="skills__group reveal">
+          <h3 class="label">Conception</h3>
+          <ul><li>Design produit</li><li>Prototypage produit</li><li>Recherche et analyse</li></ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact" aria-labelledby="contact-title">
+      <h2 id="contact-title" class="contact__title">Une idée à faire <em>exister</em> ?</h2>
+      <a class="contact__mail" href="mailto:timotheegalaxyos@gmail.com">timotheegalaxyos@gmail.com<span aria-hidden="true"> →</span></a>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__glow" aria-hidden="true"></div>
+    <span>© <span id="year">2026</span> Timothée Petit</span><span class="footer__mid">Créateur de projets numériques — France</span>
+    <a href="#top">Haut de page ↑</a>
+  </footer>
+
+  <script src="main.js" defer></script>
+</body>
+</html>
