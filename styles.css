@@ -1650,3 +1650,129 @@ body { background-attachment: scroll; }
   .brief__block, .brief__block:nth-child(even) { padding: 1.1rem 0 1.2rem; border-left: 0; }
   .brief__meta { flex-direction: column; gap: .8rem; }
 }
+
+/* Lien externe dans une fiche projet */
+.brief__link a {
+  display: inline-flex; gap: .3rem; font-size: .9375rem; text-decoration: none;
+  border-bottom: 1px solid var(--hair-strong); padding-bottom: .2rem; transition: border-color .3s var(--ease);
+}
+.brief__link a:hover { border-color: var(--accent); }
+
+/* ================================================================
+   Carte Solvane — studio au centre, parcours produit autour
+   ================================================================ */
+.map--solvane .ln-glow, .map--solvane .ln-pulse { stroke: url(#solGrad); }
+.map--solvane .ln-halo { fill: url(#solHalo); }
+.map--solvane .ln-spoke { stroke: rgba(127, 214, 232, .55); }
+.ln-next { stroke: rgba(244, 241, 234, .22); stroke-width: 1; stroke-dasharray: 2 5; }
+
+/* Pas de numéro en filigrane pour le studio, le produit et la suite */
+.systems .map--solvane .node--hub, .systems .map--solvane .node--product, .systems .map--solvane .node--next { counter-increment: none; }
+.systems .map--solvane .node--hub::before, .systems .map--solvane .node--product::before, .systems .map--solvane .node--next::before { content: none; }
+
+/* Studio : le nœud le plus soigné */
+.systems .map--solvane .node--hub {
+  justify-content: center; align-items: center; text-align: center;
+  border: 1px solid transparent;
+  background:
+    radial-gradient(80% 90% at 50% 0%, rgba(43, 184, 214, .18), transparent 70%) padding-box,
+    linear-gradient(180deg, rgba(255, 255, 255, .07), rgba(29, 70, 242, .10)) padding-box,
+    linear-gradient(#0A1022, #0A1022) padding-box,
+    linear-gradient(135deg, #DDE8FF, #3E6BFF 30%, #2BB8D6 60%, #F4F1EA 85%, #3E6BFF) border-box;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, .18), 0 0 0 6px rgba(29, 70, 242, .07);
+}
+.systems .map--solvane .node--hub .node__label { font-size: 1.35rem; letter-spacing: -.03em; font-weight: 500; }
+.node__ring {
+  position: absolute; inset: -12px; border-radius: 12px; pointer-events: none;
+  border: 1px solid rgba(127, 214, 232, .28);
+  opacity: .5; animation: hubBreath 7s ease-in-out infinite alternate paused;
+}
+@keyframes hubBreath { to { opacity: 1; } }
+
+/* Premier produit : accent corail, pulsation discrète */
+.systems .map--solvane .node--product {
+  border-color: rgba(255, 106, 61, .85);
+  background: linear-gradient(180deg, rgba(255, 106, 61, .18), rgba(255, 255, 255, .02) 60%), #140D12;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, .14), inset 0 0 26px rgba(255, 106, 61, .16);
+}
+.node__caption { position: relative; z-index: 1; font-size: .75rem; letter-spacing: .02em; color: rgba(255, 190, 165, .9); }
+.node__glow {
+  position: absolute; inset: -1px; border-radius: inherit; pointer-events: none;
+  border: 1px solid var(--glow); opacity: 0;
+  animation: productPulse 4.5s ease-out infinite paused;
+}
+@keyframes productPulse { 0% { opacity: .7; transform: scale(1); } 70%, 100% { opacity: 0; transform: scale(1.08); } }
+
+/* Prochain produit : éteint, en pointillés */
+.systems .map--solvane .node--next, .systems .map--solvane .node--next:hover, .systems .map--solvane .node--next:focus {
+  background: transparent; border: 1px dashed rgba(244, 241, 234, .28); box-shadow: none;
+}
+.systems .map--solvane .node--next .node__label { color: rgba(244, 241, 234, .5); font-weight: 400; }
+
+.map--solvane.is-live .node__ring, .map--solvane.is-live .node__glow { animation-play-state: running; }
+
+/* Desktop : anneau de 4 étapes autour du studio */
+@media (min-width: 1081px) {
+  .systems .map--solvane .map__flow::before, .systems .map--solvane .map__flow::after { display: none; }
+  .map--solvane .map__flow {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    grid-template-rows: 7rem 9rem 7rem;
+    column-gap: 2.75rem; row-gap: 2.5rem;
+  }
+  .map--solvane .node { min-height: 0; }
+  .map--solvane .node--hub { grid-area: 2 / 3; }
+  .map--solvane .node--step:nth-child(2) { grid-area: 1 / 2; }
+  .map--solvane .node--step:nth-child(3) { grid-area: 1 / 4; }
+  .map--solvane .node--step:nth-child(4) { grid-area: 3 / 4; }
+  .map--solvane .node--step:nth-child(5) { grid-area: 3 / 2; }
+  .map--solvane .node--product { grid-area: 2 / 1; }
+  .map--solvane .node--next { grid-area: 2 / 5; justify-content: center; }
+}
+
+/* Mobile : colonne verticale, studio en tête */
+@media (max-width: 1080px) {
+  .map--solvane .node--hub { min-height: 5.5rem; }
+  .map--solvane .node__ring { inset: -6px; }
+  .systems .map--solvane .node--hub::after { background: #5F86FF; border-color: #5F86FF; }
+  .systems .map--solvane .node--product::after { background: var(--glow); border-color: var(--glow); }
+  .systems .map--solvane .node--next::after { background: transparent; border-style: dashed; border-color: rgba(244, 241, 234, .4); }
+}
+
+/* ================================================================
+   Carte Solvane — étincelle et mini-globe
+   ================================================================ */
+.spark-layer { position: absolute; inset: 0; pointer-events: none; z-index: 3; }
+.spark {
+  position: absolute; left: 0; top: 0; width: 6px; height: 6px; margin: -3px 0 0 -3px;
+  border-radius: 50%; opacity: 0; will-change: transform, opacity;
+  background: #FFFFFF;
+  box-shadow: 0 0 6px 2px rgba(127, 214, 232, .85), 0 0 14px 4px rgba(46, 91, 255, .45);
+}
+.spark--t1 { width: 4px; height: 4px; margin: -2px 0 0 -2px; box-shadow: 0 0 6px 2px rgba(127, 214, 232, .5); }
+.spark--t2 { width: 3px; height: 3px; margin: -1.5px 0 0 -1.5px; box-shadow: 0 0 5px 1px rgba(46, 91, 255, .45); }
+
+/* Arrivée : Radar Pro s'illumine en corail */
+.node__lit {
+  position: absolute; inset: 0; border-radius: inherit; pointer-events: none; opacity: 0;
+  background: radial-gradient(80% 90% at 50% 40%, rgba(255, 106, 61, .32), rgba(255, 106, 61, .06) 70%, transparent);
+}
+
+/* Mini-globe en fil de fer */
+.mini-globe { position: absolute; top: .7rem; right: .7rem; width: 2.5rem; height: 2.5rem; overflow: visible; z-index: 1; }
+.mini-globe * { fill: none; stroke: rgba(255, 140, 100, .75); stroke-width: .6; vector-effect: non-scaling-stroke; }
+.mini-globe .mg-outline { stroke: rgba(255, 140, 100, .9); }
+.mini-globe .mg-parallel { stroke: rgba(255, 140, 100, .45); }
+.mg-meridian {
+  transform-box: view-box; transform-origin: 20px 20px;
+  animation: mgSpin 14s linear calc(var(--k) * -3.5s) infinite paused;
+}
+@keyframes mgSpin {
+  0% { transform: scaleX(1); }
+  25% { transform: scaleX(.02); }
+  50% { transform: scaleX(-1); }
+  75% { transform: scaleX(.02); }
+  100% { transform: scaleX(1); }
+}
+.map--solvane.is-live .mg-meridian { animation-play-state: running; }
+.mg-meridian { animation-timing-function: ease-in-out; }
+@media (prefers-reduced-motion: reduce) { .spark-layer { display: none; } }

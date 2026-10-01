@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Timothée Petit — Créateur de projets numériques</title>
-  <meta name="description" content="Portfolio de Timothée Petit, 18 ans, créateur de projets numériques en France : Nerys, Galaxy OS, ArchiEasy, GetViralCheck, OptiMap 06, VerifierFuzz.">
+  <meta name="description" content="Portfolio de Timothée Petit, 18 ans, créateur de projets numériques en France : Solvane, Radar Pro, Nerys, ArchiEasy, GetViralCheck, OptiMap 06, VerifierFuzz.">
   <meta name="author" content="Timothée Petit">
   <meta name="theme-color" content="#F3F0E8">
   <meta property="og:type" content="website">
@@ -75,15 +75,89 @@
     <!-- PROJETS -->
     <section class="work" id="projets" aria-labelledby="work-title">
       <div class="section-head">
-        <p class="eyebrow">Sélection — 06 projets</p>
+        <p class="eyebrow">Sélection — 07 projets</p>
         <h2 id="work-title" class="section-title">Ce que j’ai <em>construit</em>.</h2>
       </div>
 
       <ol class="projects">
-        <!-- 01 NERYS -->
+        <!-- 01 SOLVANE -->
         <li class="project project--lead">
-          <button class="project__row" aria-expanded="false" aria-controls="p1">
+          <button class="project__row" aria-expanded="false" aria-controls="ps">
             <span class="project__num">01</span>
+            <span class="project__name">Solvane</span>
+            <span class="project__cat">Micro-entreprise · Studio de produits web</span>
+            <span class="project__toggle" aria-hidden="true"></span>
+          </button>
+          <div class="project__panel" id="ps" hidden>
+            <div class="project__body">
+              <div class="brief">
+                <section class="brief__block">
+                  <h3 class="brief__title"><span class="brief__n">01</span>Le projet</h3>
+                  <p>Solvane est la micro-entreprise sous laquelle je conçois et développe mes produits web. Son premier produit est Radar Pro.</p>
+                </section>
+                <section class="brief__block">
+                  <h3 class="brief__title"><span class="brief__n">02</span>Ce que j’ai créé</h3>
+                  <p>La micro-entreprise elle-même, son site vitrine solvanelabs.fr et son premier produit, Radar Pro.</p>
+                </section>
+                <section class="brief__block">
+                  <h3 class="brief__title"><span class="brief__n">03</span>Comment ça fonctionne</h3>
+                  <p>Solvane réunit mes produits web sous une même structure : chacun y est conçu, développé et publié.</p>
+                </section>
+                <section class="brief__block brief__block--now">
+                  <h3 class="brief__title"><span class="brief__n">04</span>Aujourd’hui</h3>
+                  <p>Créée en 2026, Solvane est une entreprise individuelle qui démarre. Radar Pro est son premier produit.</p>
+                </section>
+              </div>
+              <div class="brief__meta">
+                <ul class="tags"><li>Entreprise individuelle</li><li>Produits web</li></ul>
+                <p class="brief__status"><span>Statut</span>Créée en 2026, en démarrage</p>
+              </div>
+              <p class="brief__link"><a href="https://solvanelabs.fr" target="_blank" rel="noopener">solvanelabs.fr<span aria-hidden="true"> ↗</span></a></p>
+            </div>
+          </div>
+        </li>
+
+        <!-- 02 RADAR PRO -->
+        <li class="project">
+          <button class="project__row" aria-expanded="false" aria-controls="p0">
+            <span class="project__num">02</span>
+            <span class="project__name">Radar Pro</span>
+            <span class="project__cat">Premier produit de Solvane</span>
+            <span class="project__toggle" aria-hidden="true"></span>
+          </button>
+          <div class="project__panel" id="p0" hidden>
+            <div class="project__body">
+              <div class="brief">
+                <section class="brief__block">
+                  <h3 class="brief__title"><span class="brief__n">01</span>Le projet</h3>
+                  <p>Radar Pro montre en direct quelles IA (ChatGPT, Claude, Perplexity…) visitent un site, vérifie qu’elles sont authentiques et repère les imposteurs, par exemple les faux robots qui se font passer pour GPTBot.</p>
+                </section>
+                <section class="brief__block">
+                  <h3 class="brief__title"><span class="brief__n">02</span>Ce que j’ai créé</h3>
+                  <p>Un produit web avec un globe 3D en direct, un espace client avec connexion par e-mail et une vérification DNS. Une extension WordPress est en cours de développement.</p>
+                </section>
+                <section class="brief__block">
+                  <h3 class="brief__title"><span class="brief__n">03</span>Comment ça fonctionne</h3>
+                  <p>Le service repose sur Cloudflare Workers et Pages, avec Supabase. Les visites d’IA s’affichent en direct, et leur authenticité est vérifiée pour distinguer les vrais robots des imposteurs.</p>
+                </section>
+                <section class="brief__block brief__block--now">
+                  <h3 class="brief__title"><span class="brief__n">04</span>Aujourd’hui</h3>
+                  <p>Le produit est en phase de lancement, développé sous ma micro-entreprise Solvane.</p>
+                </section>
+              </div>
+              <div class="brief__meta">
+                <ul class="tags"><li>Cloudflare Workers</li><li>Cloudflare Pages</li><li>Supabase</li></ul>
+                <p class="brief__status"><span>Statut</span>En phase de lancement</p>
+              </div>
+              <p class="brief__link"><a href="https://agent-radar-solvane.pages.dev" target="_blank" rel="noopener">agent-radar-solvane.pages.dev<span aria-hidden="true"> ↗</span></a></p>
+            </div>
+          </div>
+        </li>
+
+        <!-- 03 NERYS -->
+        <li class="project">
+          <button class="project__row" aria-expanded="false" aria-controls="p1">
+            <span class="project__num">03</span>
             <span class="project__name">Nerys</span>
             <span class="project__cat">Projet personnel principal · Assistant local</span>
             <span class="project__toggle" aria-hidden="true"></span>
@@ -116,46 +190,10 @@
           </div>
         </li>
 
-        <!-- 02 GALAXY -->
-        <li class="project">
-          <button class="project__row" aria-expanded="false" aria-controls="p2">
-            <span class="project__num">02</span>
-            <span class="project__name">Galaxy OS</span>
-            <span class="project__cat">Système de travail interne</span>
-            <span class="project__toggle" aria-hidden="true"></span>
-          </button>
-          <div class="project__panel" id="p2" hidden>
-            <div class="project__body">
-              <div class="brief">
-                <section class="brief__block">
-                  <h3 class="brief__title"><span class="brief__n">01</span>Le projet</h3>
-                  <p>Galaxy OS est mon système personnel de travail pour transformer une idée en recherche, expérience, résultat puis décision.</p>
-                </section>
-                <section class="brief__block">
-                  <h3 class="brief__title"><span class="brief__n">02</span>Ce que j’ai créé</h3>
-                  <p>Un environnement interne qui organise mes projets, mes hypothèses, mes expérimentations et les apprentissages obtenus.</p>
-                </section>
-                <section class="brief__block">
-                  <h3 class="brief__title"><span class="brief__n">03</span>Comment ça fonctionne</h3>
-                  <p>Je pars d’un objectif ou d’une idée. Galaxy aide à structurer la recherche, suivre ce qui est testé, conserver les preuves et décider s’il faut construire, améliorer ou arrêter.</p>
-                </section>
-                <section class="brief__block brief__block--now">
-                  <h3 class="brief__title"><span class="brief__n">04</span>Aujourd’hui</h3>
-                  <p>C’est un système personnel en évolution. Il ne s’agit pas d’une entreprise ou d’un produit commercial déjà validé.</p>
-                </section>
-              </div>
-              <div class="brief__meta">
-                <ul class="tags"><li>Outil personnel</li><li>Méthode</li><li>Prototypage</li></ul>
-                <p class="brief__status"><span>Statut</span>Système personnel, en évolution</p>
-              </div>
-            </div>
-          </div>
-        </li>
-
-        <!-- 03 ARCHIEASY -->
+        <!-- 04 ARCHIEASY -->
         <li class="project">
           <button class="project__row" aria-expanded="false" aria-controls="p3">
-            <span class="project__num">03</span>
+            <span class="project__num">04</span>
             <span class="project__name">ArchiEasy</span>
             <span class="project__cat">Prototype · Architecture</span>
             <span class="project__toggle" aria-hidden="true"></span>
@@ -188,10 +226,10 @@
           </div>
         </li>
 
-        <!-- 04 GETVIRALCHECK -->
+        <!-- 05 GETVIRALCHECK -->
         <li class="project">
           <button class="project__row" aria-expanded="false" aria-controls="p4">
-            <span class="project__num">04</span>
+            <span class="project__num">05</span>
             <span class="project__name">GetViralCheck</span>
             <span class="project__cat">Produit web · Analyse vidéo</span>
             <span class="project__toggle" aria-hidden="true"></span>
@@ -224,10 +262,10 @@
           </div>
         </li>
 
-        <!-- 05 OPTIMAP -->
+        <!-- 06 OPTIMAP -->
         <li class="project">
           <button class="project__row" aria-expanded="false" aria-controls="p5">
-            <span class="project__num">05</span>
+            <span class="project__num">06</span>
             <span class="project__name">OptiMap 06</span>
             <span class="project__cat">Projet de données · Alpes-Maritimes</span>
             <span class="project__toggle" aria-hidden="true"></span>
@@ -260,10 +298,10 @@
           </div>
         </li>
 
-        <!-- 06 VERIFIERFUZZ -->
+        <!-- 07 VERIFIERFUZZ -->
         <li class="project project--quiet">
           <button class="project__row" aria-expanded="false" aria-controls="p6">
-            <span class="project__num">06</span>
+            <span class="project__num">07</span>
             <span class="project__name">VerifierFuzz</span>
             <span class="project__cat">Recherche technique</span>
             <span class="project__toggle" aria-hidden="true"></span>
@@ -306,58 +344,47 @@
         <h2 id="systems-title" class="visually-hidden">Cartes de fonctionnement</h2>
       </div>
 
-      <!-- MAP GALAXY OS -->
-      <article class="map map--galaxy" aria-labelledby="map-galaxy-title">
+      <!-- MAP SOLVANE -->
+      <article class="map map--solvane" aria-labelledby="map-solvane-title">
         <header class="map__head">
-          <h3 id="map-galaxy-title" class="map__title">Galaxy OS <em>De l’idée à la décision.</em></h3>
-          <p class="map__lede">Un système personnel que je construis pour transformer une intuition en expérience mesurable, puis en décision.</p>
+          <h3 id="map-solvane-title" class="map__title">Solvane <em>De l’idée au produit en ligne.</em></h3>
         </header>
         <div class="map__stage">
           <span class="map__glow" aria-hidden="true"></span>
           <div class="map__plot">
             <svg class="map__lines" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true" focusable="false">
               <defs>
-                <linearGradient id="lnGrad" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="100" y2="0">
-                  <stop offset="0" stop-color="#3E6BFF"/><stop offset=".55" stop-color="#2BB8D6"/><stop offset="1" stop-color="#FF6A3D"/>
+                <linearGradient id="solGrad" gradientUnits="userSpaceOnUse" x1="100" y1="0" x2="0" y2="100">
+                  <stop offset="0" stop-color="#3E6BFF"/><stop offset=".5" stop-color="#2BB8D6"/><stop offset="1" stop-color="#FF6A3D"/>
                 </linearGradient>
-                <linearGradient id="spokeGrad" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="100" y2="100">
-                  <stop offset="0" stop-color="#2BB8D6"/><stop offset="1" stop-color="#FF6A3D"/>
-                </linearGradient>
-                <radialGradient id="galHalo"><stop offset="0" stop-color="#FF6A3D" stop-opacity=".22"/><stop offset=".45" stop-color="#1D46F2" stop-opacity=".16"/><stop offset="1" stop-color="#1D46F2" stop-opacity="0"/></radialGradient>
+                <radialGradient id="solHalo"><stop offset="0" stop-color="#2BB8D6" stop-opacity=".20"/><stop offset=".5" stop-color="#1D46F2" stop-opacity=".16"/><stop offset="1" stop-color="#1D46F2" stop-opacity="0"/></radialGradient>
               </defs>
-              <ellipse class="ln-halo" cx="50" cy="48.3" rx="34" ry="52" fill="url(#galHalo)"/>
-              <ellipse class="ln-zone" cx="50" cy="48.3" rx="30" ry="46"/>
-              <ellipse class="ln-zone ln-zone--2" cx="50" cy="48.3" rx="47" ry="72"/>
-              <ellipse class="ln-zone ln-zone--3" cx="50" cy="48.3" rx="64" ry="98"/>
-              <path class="ln-spoke" style="--d:0s" d="M12.5 13.3 L50 48.3"/>
-              <path class="ln-spoke" style="--d:1.2s" d="M37.5 13.3 L50 48.3"/>
-              <path class="ln-spoke" style="--d:2.4s" d="M62.5 13.3 L50 48.3"/>
-              <path class="ln-spoke" style="--d:3.6s" d="M87.5 13.3 L50 48.3"/>
-              <path class="ln-spoke" style="--d:4.8s" d="M87.5 48.3 L50 48.3"/>
-              <path class="ln-glow" d="M12.5 13.3 H87.5 V48.3 H50 V86.7"/>
-              <path class="ln-main" d="M12.5 13.3 H87.5 V48.3 H50 V86.7"/>
-              <path class="ln-pulse" style="--d:0s" pathLength="100" stroke-dashoffset="0" d="M12.5 13.3 H87.5 V48.3 H50 V86.7"/>
-              <path class="ln-pulse" style="--d:2s" pathLength="100" stroke-dashoffset="-25" d="M12.5 13.3 H87.5 V48.3 H50 V86.7"/>
-              <path class="ln-pulse" style="--d:4s" pathLength="100" stroke-dashoffset="-50" d="M12.5 13.3 H87.5 V48.3 H50 V86.7"/>
-              <path class="ln-pulse" style="--d:6s" pathLength="100" stroke-dashoffset="-75" d="M12.5 13.3 H87.5 V48.3 H50 V86.7"/>
+              <ellipse class="ln-halo" cx="50" cy="50" rx="30" ry="62" fill="url(#solHalo)"/>
+              <ellipse class="ln-zone" cx="50" cy="50" rx="28" ry="50"/>
+              <ellipse class="ln-zone ln-zone--2" cx="50" cy="50" rx="44" ry="76"/>
+              <path class="ln-spoke" style="--d:0s" d="M50 50 L30 12.5"/>
+              <path class="ln-spoke" style="--d:1.5s" d="M50 50 L70 12.5"/>
+              <path class="ln-spoke" style="--d:3s" d="M50 50 L70 87.5"/>
+              <path class="ln-spoke" style="--d:4.5s" d="M50 50 L30 87.5"/>
+              <path class="ln-next" d="M50 50 H90"/>
+              <path class="ln-glow" d="M30 12.5 H70 V87.5 H30 C16 87.5 10 72 10 50"/>
+              <path class="ln-main" d="M30 12.5 H70 V87.5 H30 C16 87.5 10 72 10 50"/>
+              <path class="ln-pulse" style="--d:0s" pathLength="100" stroke-dashoffset="0" d="M30 12.5 H70 V87.5 H30 C16 87.5 10 72 10 50"/>
+              <path class="ln-pulse" style="--d:2s" pathLength="100" stroke-dashoffset="-25" d="M30 12.5 H70 V87.5 H30 C16 87.5 10 72 10 50"/>
+              <path class="ln-pulse" style="--d:4s" pathLength="100" stroke-dashoffset="-50" d="M30 12.5 H70 V87.5 H30 C16 87.5 10 72 10 50"/>
+              <path class="ln-pulse" style="--d:6s" pathLength="100" stroke-dashoffset="-75" d="M30 12.5 H70 V87.5 H30 C16 87.5 10 72 10 50"/>
             </svg>
-            <ol class="map__flow" aria-label="Étapes du flux Galaxy OS">
-            <li class="node" style="--i:0" tabindex="0"><span class="node__idx">01</span><span class="node__label">Idée / objectif</span><span class="node__tip">Le point de départ : une intuition formulée clairement.</span></li>
-            <li class="node" style="--i:1" tabindex="0"><span class="node__idx">02</span><span class="node__label">Recherche</span><span class="node__tip">Rassembler ce qui existe déjà avant de construire.</span></li>
-            <li class="node" style="--i:2" tabindex="0"><span class="node__idx">03</span><span class="node__label">Hypothèse</span><span class="node__tip">Écrire ce que je pense vrai, pour pouvoir le vérifier.</span></li>
-            <li class="node" style="--i:3" tabindex="0"><span class="node__idx">04</span><span class="node__label">Expérience</span><span class="node__tip">Un test limité, conçu pour répondre à l’hypothèse.</span></li>
-            <li class="node" style="--i:4" tabindex="0"><span class="node__idx">05</span><span class="node__label">Preuves et résultats</span><span class="node__tip">Ce que l’expérience montre réellement, même quand c’est décevant.</span></li>
-            <li class="node node--key" style="--i:5" tabindex="0"><span class="node__idx">06</span><span class="node__label">Décision</span><span class="node__tip">Poursuivre, ajuster ou arrêter.</span></li>
-            <li class="node" style="--i:6" tabindex="0"><span class="node__idx">07</span><span class="node__label">Mémoire des apprentissages</span><span class="node__tip">Ce qui a été appris reste disponible pour la suite.</span></li>
-          </ol>
+            <ol class="map__flow" aria-label="Parcours d’un produit chez Solvane">
+              <li class="node node--hub" style="--i:0" tabindex="0"><span class="node__ring" aria-hidden="true"></span><span class="node__label">Solvane</span></li>
+              <li class="node node--step" style="--i:1" tabindex="0"><span class="node__idx">01</span><span class="node__label">Idée</span></li>
+              <li class="node node--step" style="--i:2" tabindex="0"><span class="node__idx">02</span><span class="node__label">Conception</span></li>
+              <li class="node node--step" style="--i:3" tabindex="0"><span class="node__idx">03</span><span class="node__label">Construction</span></li>
+              <li class="node node--step" style="--i:4" tabindex="0"><span class="node__idx">04</span><span class="node__label">Mise en ligne</span></li>
+              <li class="node node--product" style="--i:5" tabindex="0"><span class="node__glow" aria-hidden="true"></span><span class="node__lit" aria-hidden="true"></span><svg class="mini-globe" viewBox="0 0 40 40" aria-hidden="true" focusable="false"><circle class="mg-outline" cx="20" cy="20" r="15"/><ellipse class="mg-parallel" cx="20" cy="20" rx="15" ry="2.6"/><ellipse class="mg-parallel" cx="20" cy="12.5" rx="13" ry="2.2"/><ellipse class="mg-parallel" cx="20" cy="27.5" rx="13" ry="2.2"/><ellipse class="mg-meridian" style="--k:0" cx="20" cy="20" rx="15" ry="15"/><ellipse class="mg-meridian" style="--k:1" cx="20" cy="20" rx="15" ry="15"/><ellipse class="mg-meridian" style="--k:2" cx="20" cy="20" rx="15" ry="15"/><ellipse class="mg-meridian" style="--k:3" cx="20" cy="20" rx="15" ry="15"/></svg><span class="node__label">Radar Pro</span><span class="node__caption">Premier produit · en lancement</span></li>
+              <li class="node node--next" style="--i:6" tabindex="0"><span class="node__label">Prochain produit</span></li>
+            </ol>
+            <span class="spark-layer" aria-hidden="true"><span class="spark spark--t2"></span><span class="spark spark--t1"></span><span class="spark"></span></span>
           </div>
-          <p class="map__satlabel">Modules reliés</p>
-          <ul class="map__sats" aria-label="Modules reliés à Galaxy OS">
-            <li class="sat" style="--i:0" tabindex="0"><span class="sat__label">Agents de travail</span><span class="node__tip">Des assistants qui prennent en charge certaines étapes, sous supervision.</span></li>
-            <li class="sat" style="--i:1" tabindex="0"><span class="sat__label">Rapports</span><span class="node__tip">Des synthèses pour relire où en est chaque piste.</span></li>
-            <li class="sat" style="--i:2" tabindex="0"><span class="sat__label">Suivi d’expériences</span><span class="node__tip">Garder la trace de ce qui est en cours et de ce qui a été testé.</span></li>
-            <li class="sat sat--key" style="--i:3" tabindex="0"><span class="sat__label">Contrôle fondateur</span><span class="node__tip">Les décisions importantes restent validées par moi.</span></li>
-          </ul>
         </div>
       </article>
 
@@ -374,6 +401,9 @@
           <div class="map__plot">
             <svg class="map__lines" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true" focusable="false">
               <defs>
+                <linearGradient id="lnGrad" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="100" y2="0">
+                  <stop offset="0" stop-color="#3E6BFF"/><stop offset=".55" stop-color="#2BB8D6"/><stop offset="1" stop-color="#FF6A3D"/>
+                </linearGradient>
                 <radialGradient id="nerHalo"><stop offset="0" stop-color="#2BB8D6" stop-opacity=".22"/><stop offset=".5" stop-color="#1D46F2" stop-opacity=".14"/><stop offset="1" stop-color="#1D46F2" stop-opacity="0"/></radialGradient>
               </defs>
               <ellipse class="ln-halo" cx="50" cy="50" rx="22" ry="70" fill="url(#nerHalo)"/>
@@ -462,7 +492,7 @@
       <h2 id="about-title" class="visually-hidden">À propos</h2>
       <div class="about__text reveal">
         <p class="about__big">J’ai 18 ans et je vis en France. J’aime partir d’une idée <em>concrète</em>, la rendre visible, puis la transformer en quelque chose qui fonctionne réellement.</p>
-        <p class="about__small">Je travaille entre conception, développement, recherche et expérimentation.</p>
+        <p class="about__small">Je travaille entre conception, développement, recherche et expérimentation. Je développe mes projets sous ma micro-entreprise Solvane.</p>
       </div>
     </section>
 
@@ -491,7 +521,7 @@
     <!-- CONTACT -->
     <section class="contact" id="contact" aria-labelledby="contact-title">
       <h2 id="contact-title" class="contact__title">Une idée à faire <em>exister</em> ?</h2>
-      <a class="contact__mail" href="mailto:timotheegalaxyos@gmail.com">timotheegalaxyos@gmail.com<span aria-hidden="true"> →</span></a>
+      <a class="contact__mail" href="mailto:solvane.hq@outlook.com">solvane.hq@outlook.com<span aria-hidden="true"> →</span></a>
     </section>
   </main>
 
